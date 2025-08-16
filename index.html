@@ -19,30 +19,34 @@
     <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
       <!-- Navigation Bar -->
       <nav class="flex items-center space-x-6">
-        <a href="#home" class="text-lg font-medium hover:text-emerald-500 transition">Home</a>
-        <a href="#about" class="text-lg font-medium hover:text-emerald-500 transition">About</a>
-        <a href="#projects" class="text-lg font-medium hover:text-emerald-500 transition">Projects</a>
-        <a href="#contact" class="text-lg font-medium hover:text-emerald-500 transition">Contact</a>
+        <a href="#home" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">Home</a>
+        <a href="#about" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">About</a>
+        <a href="#projects" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">Projects</a>
+        <a href="#contact" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero / Header -->
-  <header class="relative overflow-hidden flex flex-col md:flex-row items-center justify-start min-h-[60vh] md:min-h-[50vh] px-4 md:px-16 py-8 md:py-12">
-    <!-- Decorative Branch (centered with viewport scaling) -->
-    <img src="img/Branch.svg" alt="Decorative branch" aria-hidden="true"
-         class="pointer-events-none select-none absolute z-10 opacity-70
-                top-1/2 left-8/9 -translate-x-1/2 -translate-y-1/2
-                w-[80vw] sm:w-[65vw] md:w-[55vw] lg:w-[45vw] xl:w-[40vw]
-                max-w-none h-auto" />
+  <header class="relative overflow-hidden flex flex-col md:flex-row items-center justify-start min-h-[10vh] md:min-h-[50vh] px-4 md:px-16 py-8 md:py-12">
+  <!-- Decorative Branch (hidden on smaller devices, visible on md and above) -->
+  <img src="img/Branch.svg" alt="Decorative branch" aria-hidden="true"
+       class="pointer-events-none select-none absolute z-10 opacity-70
+              top-1/2 left-8/9 -translate-x-1/2 -translate-y-1/2
+              w-[80vw] sm:w-[65vw] md:w-[55vw] lg:w-[45vw] xl:w-[40vw]
+              max-w-none h-auto hidden md:block" />
+  
+  <!-- Title -->
+  <div class="relative z-20 flex-1 w-full flex flex-col items-center text-center md:flex-row md:text-left md:items-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl inline-block px-6 md:px-8 lg:px-12 py-6 bg-emerald-800 text-green-50 rounded-full shadow-lg transition font-display">
+      Sofia Ferrari's Portfolio
+    </h1>
+  </div>
+</header>
 
-    <!-- Title -->
-    <div class="relative z-20 flex-1 w-full md:w-auto flex flex-col items-start text-left">
-      <h1 class="text-5xl inline-block px-6 md:px-8 lg:px-12 py-6 bg-emerald-800 text-green-50 rounded-full shadow-lg transition font-display">
-        Sofia Ferrari's Portfolio
-      </h1>
-    </div>
-  </header>
+
+
+
 
   <!-- Welcome Section -->
   <section class="mx-auto w-[80vw] mt-8 grid grid-cols-1 gap-8 rounded-3xl p-6 md:grid-cols-3">
@@ -65,8 +69,8 @@
     </div>
 
     <div class="col-span-2">
-      <h2 class="text-4xl font-display font-bold text-left">Welcome</h2>
-      <p class="mt-3 text-3xl leading-8 text-stone-800/90 text-left">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-left">Welcome</h2>
+      <p class="mt-3 text-2xl md:text-3xl leading-8 text-stone-800/90 text-left break-words">
         GDIAYFTGUYstgfuyTGDouytgOWUYGouaydfgASUYSDGaoudgauydgAUDYGasd iuyAGDIUyadguSAG UIUTYIYUTIYUTIYIYUTIYIYTIUTYTUYTUYTUYTUYTUYTUYTYU TYUTYTYUTYUTYUTYUTYUTYUTYUTYUTYUTY TYUYTYU.
       </p>
     </div>
@@ -92,14 +96,14 @@
         <!-- Right Column: Two Text Cards -->
         <div class="col-span-2 space-y-10">
           <div class="rounded-2xl bg-white/70 p-6 ring-1 ring-stone-300/60 text-left">
-            <h3 class="text-2xl font-display font-semibold">My Course List</h3>
-            <p class="mt-3 text-3xl leading-8 text-stone-900/80">
+            <h3 class="text-xl md:text-2xl font-display font-semibold">My Course List</h3>
+            <p class="mt-3 text-xl md:text-3xl leading-8 text-stone-900/80 break-words">
               GDIAYFTGUYstgfuyTGDouytgOWUYGoua ydfgASUYSDGaoudgauydgAUDYGasd iuyAGDIUyadguSAGUIUTIYIYUTIYUTIYIYTIY ITUYTUTYUTYUTYUTYUTYUTYUTYUTYUTU YTUYTUYTUYTUYTUYTUYTUYTUYTYUYTYUTY.
             </p>
           </div>
           <div class="rounded-2xl bg-white/70 p-6 ring-1 ring-stone-300/60 text-left">
-            <h3 class="text-2xl font-display font-semibold">My Future Plans</h3>
-            <p class="mt-3 text-3xl leading-8 text-stone-900/80">
+            <h3 class="text-xl md:text-2xl font-display font-semibold">My Future Plans</h3>
+            <p class="mt-3 text-xl md:text-3xl leading-8 text-stone-900/80 break-words">
               GDIAYFTGUYstgfuyTGDouytgOWUYGoua ydfgASUYSDGaoudgauydgAUDYGasd iuyAGDIUyadgu.
             </p>
           </div>
