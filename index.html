@@ -14,18 +14,23 @@
 </head>
 <body class="overflow-x-hidden bg-emerald-200 text-stone-900">
 
-  <!-- Top Bar -->
-  <header class="bg-stone-800 text-white">
-    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-      <!-- Navigation Bar -->
-      <nav class="flex items-center space-x-6">
-        <a href="#home" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">Home</a>
-        <a href="#about" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">About</a>
-        <a href="#projects" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">Projects</a>
-        <a href="#contact" class="text-base md:text-lg font-medium hover:text-emerald-500 transition">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header class="w-full">
+<!-- Full-width segmented nav with vertical dividers; big centered labels -->
+<nav aria-label="Primary" class="grid grid-cols-2 md:grid-cols-4 bg-[#3f4a3e] text-white divide-x divide-white/70 border-y border-white/20">
+<a href="./index.html" class="relative flex items-center justify-center py-6 md:py-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70">
+<span class="text-3xl md:text-5xl font-light tracking-wide">Home</span>
+</a>
+<a href="./Projects/index.html" class="relative flex items-center justify-center py-6 md:py-10 hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70">
+<span class="text-3xl md:text-5xl font-light tracking-wide">Projects</span>
+</a>
+<a href="./WBL/index.html" class="relative flex items-center justify-center py-6 md:py-10 hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70">
+<span class="text-3xl md:text-5xl font-light tracking-wide">WBL</span>
+</a>
+<a href="./Experiences/index.html" class="relative flex items-center justify-center py-6 md:py-10 hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70">
+<span class="text-3xl md:text-5xl font-light tracking-wide">Experiences</span>
+</a>
+</nav>
+</header>
 
   <!-- Hero / Header -->
   <header class="relative overflow-hidden flex flex-col md:flex-row items-center justify-start min-h-[10vh] md:min-h-[50vh] px-4 md:px-16 py-8 md:py-12">
